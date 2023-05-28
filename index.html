@@ -28,11 +28,41 @@
                 Puhelinnumero: 02 5581030
             </p>
         </section>
+       
         <section>
             <h2>Google-arvostelut</h2>
             <p>4,3 tähden arvostelu perustuu 185 Google-arvosteluun</p>
             <a href="https://www.google.com/maps/uv?pb=!1s0x4689765d987c4237%3A0xa6b7fc243a58158f!3m1!7e115!4s%2Fmaps%2Fplace%2Fluvian%2Bpizzeria%2F%4061.3599781%2C21.6271389%2C3a%2C75y%2C214.23h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sqKA2VmaQmC5nxYgSQl28kw*212e0*214m2*213m1*211s0x4689765d987c4237%3A0xa6b7fc243a58158f%3Fsa%3DX!5sluvian%20pizzeria%20-%20Google-haku!15sCgIgAQ&imagekey=!1e2!2sqKA2VmaQmC5nxYgSQl28kw&hl=fi&sa=X&ved=2ahUKEwi60KHa25j_AhWIuosKHR3ID_QQpx96BAhMEA0">Katso arvostelut</a>
         </section>
+        <section id="menu">
+            
+            
+    <h2>Pizzamenu</h2>
+    <div class="menu-item" onclick="toggleDescription('pizza1')">
+        <h3>Margherita 🍕</h3>
+        <p id="pizza1" class="description hidden">Tomaattikastike, mozzarella</p>
+    </div>
+    <div class="menu-item" onclick="toggleDescription('pizza2')">
+        <h3>Pepperoni 🍕</h3>
+        <p id="pizza2" class="description hidden">Tomaattikastike, mozzarella, pepperoni</p>
+    </div>
+    <div class="menu-item" onclick="toggleDescription('pizza3')">
+        <h3>Vegetariana 🍕</h3>
+        <p id="pizza3" class="description hidden">Tomaattikastike, mozzarella, paprika, sieni, sipuli, oliivi</p>
+    </div>
+    <!-- Add more pizzas as needed -->
+</section>
+<script>
+    function toggleDescription(id) {
+        var element = document.getElementById(id);
+        if (element.classList.contains('hidden')) {
+            element.classList.remove('hidden');
+        } else {
+            element.classList.add('hidden');
+        }
+    }
+</script>
+
     </main>
     <footer>
         <p>-Epävirallinen Luvian Pizzerian nettisivu-</p>
